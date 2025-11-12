@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #918f8f;
+            margin: 0px;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+            border-bottom: 2px solid #f3efef;
+        }
+        nav {
+            background-color: #918f8f;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.589);
+        }
+        nav > a {
+            margin: 0 10px;
+            text-decoration: bol;
+            color: #333;
+           
+        }
+        main {
+            background-color: #ddd;
+            padding: 10px;
+            margin: 10px;
+            border-radius:10px 20px ;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);    
+        }
+        article {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px; 
+        }
+        article > aside {
+            background-color: #5f5e5e;
+        }
+        footer {
+            background-color: #0a0a0a;
+            color: white;
+            padding: 1px;
+            margin: 10px 0;
+            border-top: 2px solid #ccc;
+            text-align: center;
+        }
+         footer p {
+            margin: 0;
+        }  
+         div#bola {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 40%;
+            position: fixed;    
+            bottom: 800px;
+            right: 470px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        aside {
+            background-color: #f9f9f9; 
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 3px solid #ccc;
+        }
+       
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+    <main>
+        <search id="assuntos">
+
+        </search>
+        <search id noticias>
+            <h2>Notícias Recentes</h2>
+            <article>
+                <h3>Título da Notícia 1</h3>
+                <p>Conteúdo da notícia 1...</p> 
+                <aside>
+                    <h4>Comentários</h4>
+                    <p>Comentário 1 sobre a notícia 1.</p>
+                    <p>Comentário 2 sobre a notícia 1.</p>  
+                </aside>
+            </article>
+
+        </search>
+        <search id="busca">
+            <h2>Busca no Site</h2>
+            <form action="#" method="get">
+                <label for="search-input">Pesquisar:</label>
+                <input type="text" id="search-input" name="q" placeholder="Digite sua busca aqui">
+                <button type="submit">Buscar</button> 
+            </form>
+
+        </search>
+        <section>
+            <h2>Minha Caixa</h2>
+            <div style="width: 200px; height: 200px; border: 2px solid black; padding: 10px; box-sizing: border-box;">
+                Esta é a minha caixa com borda, largura e altura definidas.
+            </div>
+        </section>
+    </main>
+     <footer>
+        <p>Desenvolvido por Marcos</p>
+     </footer>
+     <div id="bola"></div>
+  </header>  
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nidias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagens dinamica</h1>
+    <p>Tente abrir site em vários dispositivos diferentes ou simplesmente aumente ou diminua o temanho do seu navegador.</p>
+    <p>Você verá que a imagem se ajusta automaticamente ao tamanho da tela, mantendo a proporção e evitando distorções.</p>
+   <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+   <!--<img src="imagens/marcos.jpg" alt="Imagem aleatória" style="width: 100%; height: auto;"> esta opção é boa tambem-->
+    <p>Essa técnica é muito útil para garantir que as imagens sejam responsivas e sejam exibidas corretamente em qualquer dispositivo, seja um desktop, tablet ou smartphone.</p>
+    <p>Experimente redimensionar a janela do navegador para ver como a imagem se adapta ao novo tamanho.</p>
+    <p>Você também pode usar outras imagens ou ajustar o tamanho da imagem original para ver como o comportamento se mantém.</p>
+    <p>Essa abordagem é amplamente utilizada no desenvolvimento web moderno para melhorar a experiência do usuário e garantir que o conteúdo visual seja acessível e agradável em todas as plataformas.</p>
+    <h1>Reproduzindo Áudio </h1>
+    <p>Você pode reproduzir áudio em HTML5 usando a tag <code>&lt;audio&gt;</code>. Aqui está um exemplo simples:</p>
+    <audio controls>
+        <source src="midia/videoplayback.m4a" type="audio/mpeg">
+        <source src="midia/videoplayback.mp3" type="audio/mpeg">
+        <source src="midia/videoplayback.ogg" type="audio/ogg">
+        <p>Seu navegador não suporta o elemento de áudio.</p> 
+    </audio>
+    <p>Você pode adicionar controles para permitir que os usuários reproduzam, pausem e
+  ajustem o volume do áudio. O atributo <code>controls</code> adiciona esses controles automaticamente.</p>
+    <p>Você também pode especificar várias fontes de áudio usando a tag <code>&lt;source&gt;</code> para garantir que o áudio seja compatível com diferentes navegadores.</p>
+    <p>Certifique-se de que os arquivos de áudio estejam no formato correto e que o caminho para os arquivos esteja correto.</p>
+    <h1>Reproduzindo Vídeo</h1>
+    <p>Você pode reproduzir vídeo em HTML5 usando a tag <code>&lt;video&gt;</code>. Aqui está um exemplo simples:</p>
+    <video width="320" height="240" controls>
+        <source src="videos/Feliz dia das mães frase aquarela floral rose cartão (1).mp4" type="video/mp4">
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.ogg" type="video/ogg">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    <p>Assim como com o áudio, você pode adicionar controles para permitir que os usuários reproduzam, pausem e ajustem o volume do vídeo.</p> 
+    <p>O atributo <code>controls</code> adiciona esses controles automaticamente.</p>
+    <p>Você também pode especificar várias fontes de vídeo usando a tag <code>& 
+lt;source&gt;</code> para garantir que o vídeo seja compatível com diferentes navegadores.</p>
+    <p>Certifique-se de que os arquivos de vídeo estejam no formato correto e que o caminho para os arquivos esteja correto.</p>
+
+ 
+</body>
+</html>
