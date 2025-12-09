@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+        #container {
+          
+            position: relative;
+            height: 96vh;          /* Altura total da viewport */
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo {
+          
+            
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+
+            left: 50%;               /* Move o canto esquerdo para o centro */
+            top: 50%;                /* Move o canto superior para o centro */  
+
+            transform: translate(-50%, -50%);/* centraliza o conteudo */  
+
+          
+        }
+    </style>
+</head>
+<body>
+   <section id="container">
+      <article id="conteudo">
+   
+      </article>
+   </section>
+</body>
+</html>
