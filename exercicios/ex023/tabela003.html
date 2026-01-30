@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        table, th, td {
+            border: 5px solid black;
+            border-collapse: collapse;
+            padding: 40px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+   <h1>Mesclagem de células</h1>
+    <table>
+         <tr>
+              <th colspan="2">Espandido Horizontal</th>
+              <th>Cabeçalho 2</th>
+         </tr>
+         <tr>
+              <td rowspan="4">Espandido Vertical</td>
+              <td>Linha 1, Célula 2</td>
+              <td>Linha 1, Célula 3</td>
+         </tr>
+            <tr>
+                <td>Linha 2, Célula 2</td>
+                <td>Linha 2, Célula 3</td>
+            </tr>
+            <tr>
+                <td>Linha 3, Célula 2</td>
+                <td>Linha 3, Célula 3</td>  
+            </tr>
+    </table>    
+</body>
+</html>
