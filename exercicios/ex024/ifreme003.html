@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque, ipsam, dolorem similique aliquam vitae incidunt architecto veritatis repellat debitis delectus ex suscipit earum nulla enim neque odio aut qui!</p>
+
+    <ul>
+        <li><a href="ifreme001.html" target="freme">Primeira página</a></li>
+        <li><a href="ifreme002.html" target="freme">Segunda página</a></li>
+        <li><a href="#" target="freme">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit alias ut veritatis vero porro similique iste voluptas minus ex voluptate asperiores facilis inventore eum ad, magni voluptatibus molestias. Consequatur, magni?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quasi, recusandae delectus provident dignissimos reiciendis quisquam earum asperiores fuga qui placeat deleniti distinctio, velit quibusdam. Soluta enim harum velit rerum!</p>
+
+    <iframe id="tela" name="freme" srcdoc="<h1>Bem-vindo!</h1>
+    <p>Escolha uma das opções acima para carregar o conteúdo aqui.</p> <img src='img/marcos.png' alt='Imagem de boas-vindas' style='width:200px; border-radius:10px;'>" frameborder="0">
+        <p class="erro">Seu navegador não suporta iframes.</p>
+    </iframe>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, sunt corporis reiciendis veniam, in maiores esse veritatis alias tenetur eos pariatur quas voluptatum officiis a iure consequuntur, ab facere dolor! 
+    </p>
+</body>
+</html>

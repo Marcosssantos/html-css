@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                margin: 0 0 1rem 0;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                top: 0;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+            td:nth-of-type(1):before { content: "Produto"; }
+            td:nth-of-type(2):before { content: "Jan"; }
+            td:nth-of-type(3):before { content: "Fev"; }
+            td:nth-of-type(4):before { content: "Mar"; }
+            td:nth-of-type(5):before { content: "Abr"; }
+            td:nth-of-type(6):before { content: "Mai"; }
+            td:nth-of-type(7):before { content: "Jun"; }
+            td:nth-of-type(8):before { content: "Jul"; }
+            td:nth-of-type(9):before { content: "Ago"; }
+            td:nth-of-type(10):before { content: "Set"; }
+            td:nth-of-type(11):before { content: "Out"; }
+            td:nth-of-type(12):before { content: "Nov"; }
+            td:nth-of-type(13):before { content: "Dez"; }
+        }
+        tr:nth-child(even) {
+            background-color:rgb(228, 228, 228)
+        ;}
+        div#container {
+            width: 100%;
+
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+ <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo culpa temporibus, velit quibusdam iste, voluptatum excepturi rem ut ipsam tempora aliquid incidunt eaque consectetur? Numquam sapiente accusantium sunt reiciendis assumenda.</p>
+ <caption>Exemplo de tabela responsiva</caption>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>produto</th>
+                    <th>jan</th>
+                    <th>fev</th>
+                    <th>mar</th>
+                    <th>abr</th>
+                    <th>mai</th>
+                    <th>jun</th>
+                    <th>jul</th>
+                    <th>ago</th>
+                    <th>set</th>
+                    <th>out</th>
+                    <th>nov</th>
+                    <th>dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 40</td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>130</td>
+                    <td>140</td>
+                    <td>150</td>
+                    <td>160</td>
+                    <td>170</td>
+                    <td>180</td>
+                    <td>190</td>
+                    <td>200</td>
+                    <td>210</td>
+                    <td>220</td>
+                </tr>
+                <tr>
+                    <td>Home theater</td>
+                    <td>200</td>
+                    <td>220</td>
+                    <td>230</td>
+                    <td>240</td>
+                    <td>250</td>
+                    <td>260</td>
+                    <td>270</td>
+                    <td>280</td>
+                    <td>290</td>
+                    <td>300</td>
+                    <td>310</td>
+                    <td>320</td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td>300</td>
+                    <td>320</td>
+                    <td>330</td>
+                    <td>340</td>
+                    <td>350</td>
+                    <td>360</td>
+                    <td>370</td>
+                    <td>380</td>
+                    <td>390</td>
+                    <td>400</td>
+                    <td>410</td>
+                    <td>420</td>
+                </tr>
+                <tr>
+                    <td>Notebook</td>
+                    <td>400</td>
+                    <td>420</td>
+                    <td>430</td>
+                    <td>440</td>
+                    <td>450</td>
+                    <td>460</td>
+                    <td>470</td>
+                    <td>480</td>
+                    <td>490</td>
+                    <td>500</td>
+                    <td>510</td>
+                    <td>520</td>
+                </tr>
+                <tr>
+                    <td>Tablet</td>
+                    <td>500</td>
+                    <td>520</td>
+                    <td>530</td>
+                    <td>540</td>
+                    <td>550</td>
+                    <td>560</td>
+                    <td>570</td>
+                    <td>580</td>
+                    <td>590</td>
+                    <td>600</td>
+                    <td>610</td>
+                    <td>620</td>
+                </tr>
+                <tr>
+                    <td>Smartwatch</td>
+                    <td>600</td>
+                    <td>620</td>
+                    <td>630</td>
+                    <td>640</td>
+                    <td>650</td>
+                    <td>660</td>
+                    <td>670</td>
+                    <td>680</td>
+                    <td>690</td>
+                    <td>700</td>
+                    <td>710</td>
+                    <td>720</td>
+                </tr>
+                <tr>
+                    <td>Fone de ouvido</td>
+                    <td>700</td>
+                    <td>720</td>
+                    <td>730</td>
+                    <td>740</td>
+                    <td>750</td>
+                    <td>760</td>
+                    <td>770</td>
+                    <td>780</td>
+                    <td>790</td>
+                    <td>800</td>
+                    <td>810</td>
+                    <td>820</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
